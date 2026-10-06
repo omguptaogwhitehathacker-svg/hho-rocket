@@ -1,7 +1,3 @@
-// Decorative, non-functional triangular arc-reactor prop.
-// Export the rendered model as STL before importing into Tinkercad.
-// The ports, wires, and +/- marks are cosmetic only. Do not connect to gas,
-// water pressure, mains electricity, batteries, or any live system.
 
 $fn = 48;
 
@@ -76,7 +72,7 @@ module label(text_value, x, y, size = 4) {
 reactor_body();
 top_part();
 
-// Exactly 12 separate carbon-look rods, equally spaced along the three sides.
+
 rod(-6, 29, 0);
 rod(-15, 16, 1);
 rod(-24, 3, 2);
@@ -90,7 +86,7 @@ rod(-8, -27, 9);
 rod(8, -27, 10);
 rod(24, -27, 11);
 
-// Cosmetic gas, water inlet, and water outlet positions along the bottom.
+
 port(-25); // GAS
 port(0);   // WATER IN
 port(25);  // WATER OUT
@@ -100,6 +96,6 @@ label("WATER OUT", 25, -20, 3.2);
 label("CARBON RODS", 0, 0, 4.5);
 label("WIRES", 0, 13, 3.5);
 
-// Exactly two thin wire loops, kept inside the triangular outline.
+
 wire_loop(14);
 wire_loop(24);
