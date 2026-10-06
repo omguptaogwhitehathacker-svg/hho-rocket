@@ -1,6 +1,6 @@
 # HHO Rocket & Acrylic Wet Cell Generator
 
-An experimental propulsion prototype featuring a custom 3mm acrylic wet-cell reactor with 12 carbon rod electrodes, inline flashback safety protection, low-pressure gas storage, and a wireless Raspberry Pi Zero 2 W ignition system powering a curved nozzle rocket engine.
+An experimental propulsion prototype featuring a custom 3mm acrylic wet-cell reactor with 12 carbon rod electrodes, inline flashback safety protection, low-pressure gas storage, and a wireless ESP32 S3 ignition system powering a curved nozzle rocket engine.
 
 ---
 
@@ -10,7 +10,7 @@ The project consists of three core operational modules:
 
 * **Wet Cell Reactor:** 3mm acrylic body housing 12 carbon rod electrodes in a Sodium Hydroxide ($\\text{NaOH}$) solution.
 * **Safety & Storage:** Inline flashback arrestor and low-pressure gas storage vessel.
-* **Avionics & Propulsion:** Wireless Raspberry Pi Zero 2 W controlling high-voltage arc ignition driving a converging-diverging curved nozzle.
+* **Avionics & Propulsion:** Wireless esp32 s3 controlling high-voltage arc ignition driving a converging-diverging curved nozzle.
 
 ---
 
@@ -50,7 +50,7 @@ To ensure safe gas routing into storage and protect the acrylic cell:
 
 Ignition is triggered remotely using a wireless micro-controller paired with high-voltage electronics.
 
-* **Raspberry Pi Zero 2 W:** Configured as a wireless node receiving remote trigger commands over Wi-Fi/Bluetooth to pull a GPIO pin high.
+* **esp32:** Configured as a wireless node receiving remote trigger commands over Wi-Fi/Bluetooth to pull a GPIO pin high.
 * **Arc Ignition System:** The GPIO signal triggers a relay/MOSFET driver linked to a high-voltage step-up module, striking an electric arc across electrodes in the combustion chamber.
 * **Curved Converging-Diverging Nozzle:**
   * **Compression:** Smoothly curving inner walls compress expanding hot exhaust gases down to a narrow throat section, building high internal pressure.
@@ -71,4 +71,4 @@ Ignition is triggered remotely using a wireless micro-controller paired with hig
 ## 5. Operational Safety Summary
 
 * **Flashback Protection:** Inline flashback arrestor quenches flame propagation between the storage vessel and the reactor.
-* **Wireless Standoff:** Raspberry Pi Zero 2 W allows remote arming and ignition from a safe distance during launch sequences.
+* **Wireless Standoff:** The esp32 allows remote arming and ignition from a safe distance during launch sequences.AS well as live monitoring via oled and website for added safety.
