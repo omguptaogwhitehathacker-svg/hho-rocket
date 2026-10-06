@@ -1,7 +1,3 @@
-// Non-functional, static rocket display model.
-// Body diameter is 50.8 mm (2 inches). All details are molded into one body.
-// The long body, small fins, and bell nozzle use NASA launch-vehicle styling.
-// The nozzle and ignition-wire details are cosmetic only.
 
 $fn = 64;
 
