@@ -1,3 +1,5 @@
+<img width="1292" height="637" alt="image" src="https://github.com/user-attachments/assets/42cad599-cf2f-47d7-9040-28bb33dc7a7d" />
+
 # HHO Rocket & Acrylic Wet Cell Generator
 
 An experimental propulsion prototype featuring a custom 3mm acrylic wet-cell reactor with 12 carbon rod electrodes, inline flashback safety protection, low-pressure gas storage, and a wireless ESP32 S3 ignition system powering a curved nozzle rocket engine.
