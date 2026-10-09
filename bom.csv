@@ -1,0 +1,21 @@
+"1. Control, Avionics & Wireless Ignition",,,,,
+Component,Specification / Note,Store,Link,Est. Cost (INR),Est. Cost (USD)
+ESP32 S3 N16R8,"Quad-core wireless micro-controller for ignition se-quence,hho generator con-trol,status monitoring and failsafes.",Robu.in,"ESP32-S3 De-
+vKit N16R8
+WiFi Blue-tooth Dev Board | Robu.in",₹839,8
+,,,,,
+B3950 10K THERMIS-TOR TEMPRATURE SENSOR,TEMPRATURE MONITOR-ING(3NOS),Robu.in,"B3950 10K NTC
+Ther-mistor Tem-pera-ture Sensor 5*25m m with XH2.54
+Con-nector with 2Meter Cable | Robu.in",₹180,2
+15KV HIGH VOLTAGE GENERATOR,IGNITION ARC GENERA-TOR,Robu.in,"15KV
+High Voltage",₹165,1.8
+,,,"Gener-ator Arc Ignition Inverter Step Up Boost Coil Module
+| Robu.in",,
+IRF3205 MOSFET,MOSFET FOR CONTROL-LING THE ROCKET IGNI-TION AND HHO GENERA-TOR (2NOS),Robu.in,"Buy IRF320 5 MOS-FET
+(Pack Of 3)
+Online at Robu.in
+| Robu.in",₹96,1
+LI-ION CELL,Dedicated power source for ESP32 S3(2NOS),ROBU.I N,"DMEG C INR186 50-26E
+3.7V
+2600m
+Ah Li-Ion | Robu.in",₹318,3.6
