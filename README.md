@@ -1,3 +1,6 @@
+<img width="1920" height="1031" alt="Screenshot_From_2026-08-24_11-56-53" src="https://github.com/user-attachments/assets/4b4e557b-0d98-41a3-ae73-302e57c2d807" />
+<img width="667" height="514" alt="image" src="https://github.com/user-attachments/assets/f1b2c4c7-df30-437e-bc7a-f76dac235e83" />
+
 <img width="1292" height="637" alt="image" src="https://github.com/user-attachments/assets/42cad599-cf2f-47d7-9040-28bb33dc7a7d" />
 <h1>This project consists of four primary systems to give an rocket that burns fuel made from water. they are:</h1>
 <h3> 1. the fuel generator:</h3>
