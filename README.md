@@ -1,76 +1,12 @@
 <img width="1292" height="637" alt="image" src="https://github.com/user-attachments/assets/42cad599-cf2f-47d7-9040-28bb33dc7a7d" />
+<h1>This project consists of four primary systems to give an rocket that burns fuel made from water. they are:</h1>
+<h3> 1. the fuel generator:</h3>
+it is a wet cell electrolysis chamber which has 12 carbon rods submerged in a NOAH solution with water, the carbon rods work as electrodes with minimal decay to produce a mixture of hydrogen gas and oxygen gas from water. It has a water inlet a one-way valved gas outlet and a simple wire system connecting the carbon rods with alternating polarity. This particular version of the hho generator uses 3.3v at 35a to give the best result with minimal decay, the power is provided externally from a circuit controlling this generator.
+<h3>2. The main rocket:</h3>
+This rocket model is made up of pure stainless steel and is water cooled from another ss tube surrounding it, to ensure the rocket body does not melt a high-power pump along with a water-cooling brick and fan is used to cool the water. There are two ignition carbon rods inserted into the main rocket body to deliver high current sparks for ignition these are insulated from the rest of the body to prevent mishaps.
+The rocket nozzle is inspired from real life NASA designs with a converging and then diverging design to deliver maximum boost.
+<h3>3. The brain:</h3>
+Since this is an very dangerous project including th e production and combustion of hydrogen to safeguard this procedure and to control and monitor the functioning of this project an custom circuit with an ESP32-S3 and multiple relays and temprature sensors ensure the proper functioning of this project and even shuts it down in case of emergencies. This circuit uses an oled an esp32 32 relays and an external power supply for its functioning, It can also be activated wirelessly to ensure proper safety of the user.
 
-# HHO Rocket & Acrylic Wet Cell Generator
-
-An experimental propulsion prototype featuring a custom 3mm acrylic wet-cell reactor with 12 carbon rod electrodes, inline flashback safety protection, low-pressure gas storage, and a wireless ESP32 S3 ignition system powering a curved nozzle rocket engine.
-
----
-
-## 1. System Overview
-
-The project consists of three core operational modules:
-
-* **Wet Cell Reactor:** 3mm acrylic body housing 12 carbon rod electrodes in a Sodium Hydroxide ($\\text{NaOH}$) solution.
-* **Safety & Storage:** Inline flashback arrestor and low-pressure gas storage vessel.
-* **Avionics & Propulsion:** Wireless esp32 s3 controlling high-voltage arc ignition driving a converging-diverging curved nozzle.
-
----
-
-## 2. Fuel Generation (Acrylic Arc Reactor)
-
-The electrolyzer reactor uses a sealed 3mm acrylic chamber designed for a submerged wet-cell configuration.
-
-* **3mm Acrylic Housing:** Custom sealed enclosure engineered to hold the liquid electrolyte bath and collect generated gas in the upper headspace.
-* **Electrolyte Solution:** Distilled water mixed with Sodium Hydroxide ($\\text{NaOH}$) to maximize electrical conductivity.
-* **12 Carbon Rod Array:** 12 submerged carbon rods wired in an alternating parallel circuit ($6\\times \\text{positive}, 6\\times \\text{negative}$) to split water into stoichiometric HHO gas ($2\\text{H}_2\\text{O} \\rightarrow 2\\text{H}_2 + \\text{O}_2$).
-
-```
-        +-----------------------------------+
-        |          GAS HEADSPACE            |===> HHO Gas Output
-        +-----------------------------------+
-        |  [+] [-] [+] [-] [+] [-] [+] [-]  |
-        |   |   |   |   |   |   |   |   |   |  <-- 12 Carbon Rods
-        |   |   |   |   |   |   |   |   |   |      (Submerged)
-        |  [NaOH + Distilled Water Solution]|
-        +-----------------------------------+
-             3mm Acrylic Reactor Chamber
-```
-
----
-
-## 3. Gas Storage & Flashback Safety
-
-To ensure safe gas routing into storage and protect the acrylic cell:
-
-* **Inline Flashback Arrestor:** A metallic porous barrier integrated into the main feed line that quenches flame fronts before fire can reach the acrylic reactor.
-* **Low-Pressure Storage Tank:** Collects HHO gas from the reactor and holds it under controlled low pressure until launch.
-* **Mechanical Check Valve:** Retains stored gas pressure and prevents backflow.
-
----
-
-## 4. Wireless Avionics & Rocket Ignition
-
-Ignition is triggered remotely using a wireless micro-controller paired with high-voltage electronics.
-
-* **esp32:** Configured as a wireless node receiving remote trigger commands over Wi-Fi/Bluetooth to pull a GPIO pin high.
-* **Arc Ignition System:** The GPIO signal triggers a relay/MOSFET driver linked to a high-voltage step-up module, striking an electric arc across electrodes in the combustion chamber.
-* **Curved Converging-Diverging Nozzle:**
-  * **Compression:** Smoothly curving inner walls compress expanding hot exhaust gases down to a narrow throat section, building high internal pressure.
-  * **Decompression:** The nozzle expands outward after the throat, allowing gas to decompress rapidly and accelerate out to generate forward thrust.
-
-```
-       +--------------------+
-       |  Combustion Chamber |
-       +---------  ---------+
-                 \  /        <-- Compression (Curved Converging)
-                  ||         <-- Throat
-                 /  \        <-- Decompression (Curved Diverging)
-                /    \       ===> Supersonic Exhaust Thrust
-```
-
----
-
-## 5. Operational Safety Summary
-
-* **Flashback Protection:** Inline flashback arrestor quenches flame propagation between the storage vessel and the reactor.
-* **Wireless Standoff:** The esp32 allows remote arming and ignition from a safe distance during launch sequences.AS well as live monitoring via oled and website for added safety.
+<h3>4. The gas storage:</h3>
+Since the hho generator doesnt actually produce enough gas to br directly used in the rocket an low pressure gas storage can is used at a minimum pressure of 10psi.
